@@ -1,352 +1,320 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="description" content="Scholarly 1-on-1 – private 1-on-1 online tutoring for all grades since 2011.">
+    <title>Scholarly 1-on-1 | Private Online Tutoring</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 48 48%27%3E%3Crect width=%2748%27 height=%2748%27 rx=%2714%27 fill=%27%23fcd131%27/%3E%3Cpath d=%27M24 13 8 20.5 24 28l16-7.5L24 13Z%27 fill=%27%2316140f%27/%3E%3Cpath d=%27M14.5 24.5v6.2c0 2.6 4.3 4.8 9.5 4.8s9.5-2.2 9.5-4.8v-6.2L24 29l-9.5-4.5Z%27 fill=%27%2316140f%27/%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="row ">
-        <div class="col-2 bg disnone">
-            <div class="sticky-top margintopp ">
-                <h5 class="sidetxt txtfont1">Key Stage 1 <span class="dotlinecolor">...................</span></h5>
-                <ul>
-                    <li class="ultxt txtfont1">Key Stage 1 - Mathematics </li>
-                    <li class="ultxt txtfont1">Key Stage 1 - English</li>
-                </ul>
-                <h5 class="sidetxt txtfont1">Key Stage 2 <span class="dotlinecolor">...................</span></h5>
-                <h5 class="sidetxt txtfont1">Key Stage 3 <span class="dotlinecolor">...................</span></h5>
-                <h5 class="sidetxt txtfont1">GCSE <span class="dotlinecolor">...................</span></h5>
-                <h5 class="sidetxt txtfont1">AS Levels <span class="dotlinecolor">...................</span></h5>
-                <h5 class="sidetxt txtfont1">A Levels <span class="dotlinecolor">...................</span>.</h5>
-                <div class="smallbox">
-                    <h5 class="yelo">Checkout</h5>
-                    <h5 class="yelosub">Other Regions</h5>
-                </div>
-                <div class="newbox">
-                    <h5 class="sidebarcoun"> <img class="flagg" src="/Images/middleeast.webp" alt="" srcset="">Jaya’s
-                        Academy Middle East
-                    </h5>
-                    <hr>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
-                    <h5 class="sidebarcoun"> <img class="flagg" src="/Images/usa.webp" alt="" srcset="">Jaya’s Academy
-                        USA</h5>
-                    <hr>
-                    <h5 class="sidebarcoun"><img class="flagg" src="/Images/uk.webp" alt="" srcset="">Jaya’s Academy UK
-                    </h5>
-                    <hr>
-                    <h5 class="sidebarcoun"><img class="flagg" src="/Images/global.webp" alt=""
-                            srcset="">Jayasacademy.com</h5>
+    <!-- Announcement bar -->
+    <div class="announce">
+        <p>✨ One Million Hours of 1-on-1 Tutoring classes brought since 2011!</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="top">
+        <div class="header__inner">
+            <a class="brand" href="#top" aria-label="Scholarly 1-on-1 home">
+                <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+                    <rect width="48" height="48" rx="14" fill="#fcd131" />
+                    <path d="M24 13 8 20.5 24 28l16-7.5L24 13Z" fill="#16140f" />
+                    <path d="M14.5 24.5v6.2c0 2.6 4.3 4.8 9.5 4.8s9.5-2.2 9.5-4.8v-6.2L24 29l-9.5-4.5Z" fill="#16140f" />
+                    <path d="M38 21.5v8" stroke="#16140f" stroke-width="2" stroke-linecap="round" />
+                    <circle cx="38" cy="31" r="2" fill="#16140f" />
+                </svg>
+                <span class="brand__text">
+                    <span class="brand__name">Scholarly</span>
+                    <span class="brand__tag">1-on-1 Tutoring</span>
+                </span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#top" class="nav__link is-active">Home</a>
+                <a href="#courses" class="nav__link">Courses</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#testimonials" class="nav__link">Reviews</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </nav>
+            <a href="#contact" class="btn btn--sm header__cta">Book a free demo</a>
+            <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__sticky">
+                <p class="sidebar__title">Curriculum</p>
+                <ul class="stage-list">
+                    <li>
+                        <a href="#courses" class="stage-link">Key Stage 1</a>
+                        <ul class="stage-sub">
+                            <li>Key Stage 1 – Mathematics</li>
+                            <li>Key Stage 1 – English</li>
+                        </ul>
+                    </li>
+                    <li><a href="#courses" class="stage-link">Key Stage 2</a></li>
+                    <li><a href="#courses" class="stage-link">Key Stage 3</a></li>
+                    <li><a href="#courses" class="stage-link">GCSE</a></li>
+                    <li><a href="#courses" class="stage-link">AS Levels</a></li>
+                    <li><a href="#courses" class="stage-link">A Levels</a></li>
+                </ul>
+
+                <div class="regions">
+                    <p class="regions__eyebrow">Checkout</p>
+                    <p class="regions__title">Other Regions</p>
+                    <a href="#" class="region"><img src="Images/middleeast.webp" alt="">Scholarly 1-on-1 Middle East</a>
+                    <a href="#" class="region"><img src="Images/usa.webp" alt="">Scholarly 1-on-1 USA</a>
+                    <a href="#" class="region"><img src="Images/uk.webp" alt="">Scholarly 1-on-1 UK</a>
+                    <a href="#" class="region"><img src="Images/global.webp" alt="">Scholarly1on1.com</a>
                 </div>
             </div>
-        </div>
-        <div class="col-md-10 col-sm-12">
-            <div class="row">
-                <div class="col-md-6 ">
-                    <nav class="navbar navbar-expand-lg navbar-light  ">
-                        <div class="container-fluid ">
-                            <a class="navbar-brand m-2 navimg " href="#"><img src="/Images/Logo.jpg" alt="" srcset=""></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link  text-black txtfont1" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link text-black txtfont1" href="#">FAQ</a>
-                                    </li>
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link text-black txtfont1" href="#">Career</a>
-                                    </li>
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link text-black txtfont1" href="#">Contact</a>
-                                    </li>
-                                </ul>
+        </aside>
 
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-md-6 bg newcenter ">
-                    <div class="">
-                        <h5 class="toptxt txtfont2">One Million Hours of 1-on-1 Tutoring classes brought Since 2011!
-                        </h5>
+        <main class="main">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero__content">
+                    <span class="pill enter">Since 2011 · UK Curriculum Experts</span>
+                    <h1 class="hero__title enter" style="--d:.08s">
+                        Private <span class="hl">1-on-1</span><br>Online Tutoring
+                    </h1>
+                    <ul class="checks">
+                        <li class="enter" style="--d:.16s">Tutoring for all Grades</li>
+                        <li class="enter" style="--d:.2s">Homework &amp; Assignment Help</li>
+                        <li class="enter" style="--d:.24s">Expert Certified Teachers</li>
+                        <li class="enter" style="--d:.28s">Free Consultation &amp; Tech Demo</li>
+                        <li class="enter" style="--d:.32s">Tutoring for IB, IGCSE, GCSE &amp; CBSE</li>
+                        <li class="enter" style="--d:.36s">Scholarly 1-on-1 – Since 2011</li>
+                    </ul>
+                    <div class="hero__actions enter" style="--d:.42s">
+                        <a href="#contact" class="btn">Contact Us Now <span class="btn__arrow">→</span></a>
+                        <a href="#courses" class="btn btn--ghost">Explore courses</a>
                     </div>
                 </div>
-            </div>
-            <div class="banner "></div>
-            <Section class="container">
-                <h3 class="privatetxt  txtfont1">Private 1-on-1 Online Tutoring</h3>
-                <hr>
-                <div class="row mgside ">
-                    <h5 class="col-md-4 col-sm-12 tutoringtxt txtfont4"><img class="imgleft" src="/Images/tick.jpg" alt="" srcset="">
-                        Tutoring
-                        for all
-                        Grades </h5>
-                    <h5 class="col-md-4 col-sm-12 tutoringtxt txtfont4"><img class="imgleft" src="/Images/tick.jpg" alt="" srcset="">
-                        Homework
-                        &
-                        Assignment Help </h5>
+                <div class="hero__media enter" style="--d:.15s">
+                    <img src="Images/banner.jpg" alt="Smiling student giving a thumbs up">
+                    <div class="hero__badge float" aria-hidden="true">
+                        <strong>1M+</strong>
+                        <span>tutoring hours</span>
+                    </div>
                 </div>
-                <div class="row mgside">
-                    <h5 class="col-md-4 col-sm-12 tutoringtxt txtfont4"><img class="imgleft" src="/Images/tick.jpg" alt=""
-                            srcset="">Expert
-                        Certified
-                        Teachers </h5>
-                    <h5 class="col-md-4 col-sm-12 tutoringtxt txtfont4"><img class="imgleft" src="/Images/tick.jpg" alt=""
-                            srcset="">Free
-                        Consultation &
-                        Tech Demo</h5>
+            </section>
+
+            <!-- Stats -->
+            <section class="stats">
+                <div class="stats__grid">
+                    <img class="stat reveal" style="--d:0s" src="Images/1.png" alt="15K+ Students">
+                    <img class="stat reveal" style="--d:.08s" src="Images/2.png" alt="200+ Teachers">
+                    <img class="stat reveal" style="--d:.16s" src="Images/3.png" alt="1000K+ Sessions">
+                    <img class="stat reveal" style="--d:.24s" src="Images/4.png" alt="12+ Countries">
                 </div>
-                <div class="row mgside">
-                    <h5 class="col-md-4 col-sm-12 tutoringtxt txtfont4"><img class="imgleft" src="/Images/tick.jpg" alt=""
-                            srcset="">Tutoring
-                        for IB,
-                        IGCSE, GCSE & CBSE
-                    </h5>
-                    <h5 class="col-md-4 col-sm-12 tutoringtxt txtfont1 txtfont4"><img class="imgleft" src="/Images/tick.jpg" alt=""
-                            srcset="">
-                        Jaya's
-                        Academy -
-                        Since 2011 </h5>
-                </div>
-                <button class="btnn m-3 txtfont4">Contact Jaya Now <img class="arrow" src="/Images/right-arrow.png"
-                        alt="" srcset=""></button>
-                <hr>
-                <h4 class="jayatxt txtfont1 mt-5">Jaya’s Academy</h4>
-                <h3 class="teacherstext txtfont4">Teachers who love <span class="txtcolor">teaching</span> and inspire
-                    kids to
-                    like <span class="txtcolor">studying</span></h3>
-                <h5 class="teachersubtxt txtfont2 mb-5 mt-3">As a dynamic group of educators, we are dedicated to
-                    imparting excellence and
-                    comprehension in the
+            </section>
+
+            <!-- Intro -->
+            <section class="section intro">
+                <p class="eyebrow reveal">Scholarly 1-on-1</p>
+                <h2 class="h2 reveal" style="--d:.08s">
+                    Teachers who love <span class="mark">teaching</span> and inspire kids to like
+                    <span class="mark">studying</span>
+                </h2>
+                <p class="lead reveal" style="--d:.16s">
+                    As a dynamic group of educators, we are dedicated to imparting excellence and comprehension in the
                     realm of education. Our focus is on nurturing each child’s potential through patient mentorship and
                     assistance, with our students serving as constant inspiration. Their encouragement motivates us to
-                    strive for even greater achievements.</h5>
-                <hr>
-            </Section>
-
-            <section class="container">
-                <h4 class="jayatxt pt-4 ">Jaya’s Academy</h4>
-                <h3 class="coursewe pb-2 txtfont4">The Courses We Offer</h3>
-                <hr>
-                <div class="row">
-                    <div class="col-md-3 col-sm-12">
-                        <div class=" txtfont2  mb-5">
-                            <h5 class="keystagee">Key Stage 1</h5>
-                            <h6 class="txtfont2 subtxt ">During Key Stage 1, students follow the National Curriculum, which
-                                includes core
-                                subjects
-                                such as English, mathematics,…</h6>
-                            <div class="row mt-3 mb-3">
-                                <div class="col-md-6  col-sm-12 ">
-                                    <h5 class=" txtbtn">Key Stage 1 Mathematics</h5>
-                                </div>
-                                <div class="col-md-6  col-sm-12">
-                                    <h5 class=" txtbtn">Key Stage 1 English</h5>
-                                </div>
-                            </div>
-                            <h5 class="textline pointer">See more subjects under Key Stage 1</h5>
-                        </div>
-                        <div class="subtxt mb-5">
-                            <h5 class="keystagee">Key Stage 3</h5>
-                            <h6 class="subtxt">Key objectives during Key Stage 3 include deepening subject knowledge, developing
-                                critical thinking and analytical skills, ..</h6>
-                            <div class="row  mt-3 mb-3 ">
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn ">Key Stage 3 Mathematics</h5>
-                                </div>
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn">Key Stage 3 Com..</h5>
-                                </div>
-                                <div class="col-md-2  col-sm-12 ">
-                                    <spna class="circle">+5</spna>
-                                </div>
-                            </div>
-                            <h5 class="textline pointer">See more subjects under Key Stage 3</h5>
-                        </div>
-                        <div class="subtxt mb-5">
-                            <h5 class="keystagee">AS Levels</h5>
-                            <h6 class="subtxt">AS Levels has flexibility to choose subjects based on their interests and future
-                                educational or career plans. Common subjects include…</h6>
-                            <div class="row  mt-3 mb-3">
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn">As Levels Mathematics</h5>
-                                </div>
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn">As Levels Biology</h5>
-                                </div>
-                                <div class="col-md-2  col-sm-12 ">
-                                    <spna class="circle">+2</spna>
-                                </div>
-                            </div>
-                            <h5 class="textline pointer">See more subjects under AS Levels</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3  col-sm-12">
-                        <div class="subtxt mb-5">
-                            <h5 class="keystagee">Key Stage 2</h5>
-                            <h6 class="subtxt">Key Stage 2 include further developing literacy and numeracy skills, fostering critical
-                                thinking, expanding knowledge…</h6>
-                            <div class="row mt-3 mb-3">
-                                <div class="col-md-5  col-sm-12 ">
-                                    <h5 class=" txtbtn">Key Stage 2 Mathematics</h5>
-                                </div>
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn">Key Stage 2 English </h5>
-                                </div>
-                                <div class="col-md-2  col-sm-12 ">
-                                    <spna class="circle">+1</spna>
-                                </div>
-                            </div>
-                            <h5 class="textline pointer">See more subjects under Key Stage 2</h5>
-                        </div>
-                        <div class="subtxt mb-5 ">
-                            <h5 class="keystagee">GCSE</h5>
-                            <h6 class="subtxt">Key objectives during Key Stage 3 include deepening subject knowledge, developing
-                                critical thinking and analytical skills, ..</h6>
-                            <div class="row  mt-3 mb-3">
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn">Gcse Mathematics</h5>
-                                </div>
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn">Gcse Combined Science</h5>
-                                </div>
-                                <div class="col-md-2  col-sm-12">
-                                    <spna class="circle">+4</spna>
-                                </div>
-                            </div>
-                            <h5 class="textline pointer">See more subjects under GCSE</h5>
-                        </div>
-                        <div class="subtxt mb-5">
-                            <h5 class="keystagee ">A Levels</h5>
-                            <h6 class="subtxt">AS Levels has flexibility to choose subjects based on their interests and future
-                                educational or career plans. Common subjects include…</h6>
-                            <div class="row  mt-3 mb-3">
-                                <div class="col-md-5  col-sm-12 ">
-                                    <h5 class=" txtbtn">A Levels Mathematics</h5>
-                                </div>
-                                <div class="col-md-5  col-sm-12">
-                                    <h5 class=" txtbtn">A Levels Biology</h5>
-                                </div>
-                                <div class="col-md-2   col-sm-12">
-                                    <spna class="circle">+1</spna>
-                                </div>
-                            </div>
-                            <h5 class="textline pointer">See more subjects under A Levels</h5>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 col-sm-12 centerr">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 mt-4"><img class="imgg" src="/Images/1.png" alt="" srcset=""></div>
-                            <div class="col-md-6 col-sm-12 mt-4"><img class="imgg" src="/Images/2.png" alt="" srcset=""></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 mt-4"><img class="imgg" src="/Images/3.png" alt="" srcset=""></div>
-                            <div class="col-md-6 col-sm-12 mt-4"><img class="imgg" src="/Images/4.png" alt="" srcset=""></div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
+                    strive for even greater achievements.
+                </p>
             </section>
 
-            <section class="container">
-                <h6 class="jayatxt mt-4 pt-4">Who We Are..</h6>
-                <h5 class="proudtxt">The proudest moment for a <span class="newtxtcolor"> Teacher</span> is when she
-                    knows that the <span class="newtxtcolor">Student</span> no longer needs her!</h5>
-                <h5 class="proudtxtsub txtfont2">We are an energetic team of teachers, committed to bringing quality and
-                    understanding into the world
+            <!-- Courses -->
+            <section class="section courses" id="courses">
+                <p class="eyebrow reveal">Scholarly 1-on-1</p>
+                <h2 class="h2 reveal" style="--d:.08s">The Courses We Offer</h2>
+
+                <div class="course-grid">
+                    <article class="course reveal">
+                        <span class="course__num">01</span>
+                        <h3>Key Stage 1</h3>
+                        <p>During Key Stage 1, students follow the National Curriculum, which includes core subjects
+                            such as English, mathematics,…</p>
+                        <div class="chips">
+                            <span class="chip">KS1 Mathematics</span>
+                            <span class="chip">KS1 English</span>
+                        </div>
+                        <a href="#" class="more">See more subjects <span>→</span></a>
+                    </article>
+
+                    <article class="course reveal">
+                        <span class="course__num">02</span>
+                        <h3>Key Stage 2</h3>
+                        <p>Key Stage 2 includes further developing literacy and numeracy skills, fostering critical
+                            thinking, expanding knowledge…</p>
+                        <div class="chips">
+                            <span class="chip">KS2 Mathematics</span>
+                            <span class="chip">KS2 English</span>
+                            <span class="chip chip--count">+1</span>
+                        </div>
+                        <a href="#" class="more">See more subjects <span>→</span></a>
+                    </article>
+
+                    <article class="course reveal">
+                        <span class="course__num">03</span>
+                        <h3>Key Stage 3</h3>
+                        <p>Key objectives during Key Stage 3 include deepening subject knowledge, developing critical
+                            thinking and analytical skills,…</p>
+                        <div class="chips">
+                            <span class="chip">KS3 Mathematics</span>
+                            <span class="chip">KS3 Computing</span>
+                            <span class="chip chip--count">+5</span>
+                        </div>
+                        <a href="#" class="more">See more subjects <span>→</span></a>
+                    </article>
+
+                    <article class="course reveal">
+                        <span class="course__num">04</span>
+                        <h3>GCSE</h3>
+                        <p>Building strong foundations across core and optional subjects to prepare students for
+                            confident exam success and next steps,…</p>
+                        <div class="chips">
+                            <span class="chip">GCSE Mathematics</span>
+                            <span class="chip">GCSE Combined Science</span>
+                            <span class="chip chip--count">+4</span>
+                        </div>
+                        <a href="#" class="more">See more subjects <span>→</span></a>
+                    </article>
+
+                    <article class="course reveal">
+                        <span class="course__num">05</span>
+                        <h3>AS Levels</h3>
+                        <p>AS Levels offer flexibility to choose subjects based on interests and future educational or
+                            career plans. Common subjects include…</p>
+                        <div class="chips">
+                            <span class="chip">AS Mathematics</span>
+                            <span class="chip">AS Biology</span>
+                            <span class="chip chip--count">+2</span>
+                        </div>
+                        <a href="#" class="more">See more subjects <span>→</span></a>
+                    </article>
+
+                    <article class="course reveal">
+                        <span class="course__num">06</span>
+                        <h3>A Levels</h3>
+                        <p>A Levels deepen specialist knowledge in chosen subjects, preparing students for university
+                            and future careers. Common subjects include…</p>
+                        <div class="chips">
+                            <span class="chip">A Level Mathematics</span>
+                            <span class="chip">A Level Biology</span>
+                            <span class="chip chip--count">+1</span>
+                        </div>
+                        <a href="#" class="more">See more subjects <span>→</span></a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="section about" id="about">
+                <p class="eyebrow reveal">Who We Are</p>
+                <h2 class="h2 reveal" style="--d:.08s">
+                    The proudest moment for a <span class="mark">Teacher</span> is when she knows that the
+                    <span class="mark">Student</span> no longer needs her!
+                </h2>
+                <p class="lead reveal" style="--d:.16s">
+                    We are an energetic team of teachers, committed to bringing quality and understanding into the world
                     of learning. We aim at bringing out the best in every child, through patient guidance and support.
-                    Our students are our greatest inspiration at all times. They encourage us to do more.</h5>
-                <div class="row">
-                    <div class="col-md-4 boxx ">
-                        <img class="imgcenter" src="/Images/trophy.png" alt="" srcset="">
-                        <h5 class="maintxtt txtfont1">Creating future leaders</h5>
-                        <h4 class="subfuture">We believe that true education goes beyond the attainment of degrees and
-                            certificates.
+                    Our students are our greatest inspiration at all times. They encourage us to do more.
+                </p>
+
+                <div class="value-grid">
+                    <article class="value reveal">
+                        <div class="value__icon"><img src="Images/trophy.png" alt=""></div>
+                        <h3>Creating future leaders</h3>
+                        <p>We believe that true education goes beyond the attainment of degrees and certificates.
                             Employers today are seeking highly creative individuals who can take on the challenging
                             needs of an ever-changing global market. As educators, our prime mission is to make our
-                            students ready for the 21st century.</h4>
-                    </div>
-                    <div class="col-md-4 boxx">
-                        <img class="imgcenter" src="/Images/certificate.png" alt="" srcset="">
-                        <h5 class="maintxtt txtfont1">Student-centred learning</h5>
-                        <h4 class="subfuture">The world is shifting away from conventional, classroom-based learning to
-                            a more
+                            students ready for the 21st century.</p>
+                    </article>
+                    <article class="value reveal">
+                        <div class="value__icon"><img src="Images/certificate.png" alt=""></div>
+                        <h3>Student-centred learning</h3>
+                        <p>The world is shifting away from conventional, classroom-based learning to a more
                             individualised approach that caters to the multi-faceted abilities of each child. We at
-                            Jaya’s Academy create the ideal platform for students to learn at their own pace and set
-                            their own goals.</h4>
-                    </div>
-                    <div class="col-md-4 boxx">
-                        <img class="imgcenter" src="/Images/experience.png" alt="" srcset="">
-                        <h5 class="maintxtt txtfont1">Personalised learning experience</h5>
-                        <h4 class="subfuture">Our one-on-one private tutoring helps students stretch their creativity
-                            and analytical
+                            Scholarly 1-on-1 create the ideal platform for students to learn at their own pace and set
+                            their own goals.</p>
+                    </article>
+                    <article class="value reveal">
+                        <div class="value__icon"><img src="Images/experience.png" alt=""></div>
+                        <h3>Personalised learning experience</h3>
+                        <p>Our one-on-one private tutoring helps students stretch their creativity and analytical
                             skills beyond what they achieve in their school classroom. Our learning materials are
-                            tailored to the student, not the other way round.</h4>
+                            tailored to the student, not the other way round.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonial" id="testimonials">
+                <div class="testimonial__inner">
+                    <div class="testimonial__head">
+                        <p class="eyebrow reveal">Testimonials</p>
+                        <h2 class="h2 reveal" style="--d:.08s">What Our Customers Have To Say</h2>
+                        <p class="muted reveal" style="--d:.16s">Read their reports and satisfaction in their own words</p>
+                    </div>
+
+                    <div class="testimonial__body">
+                        <div class="testimonial__media reveal reveal--left">
+                            <img class="testimonial__dots" src="Images/dot.png" alt="" aria-hidden="true">
+                            <img class="testimonial__photo" src="Images/faculty.png" alt="Scholarly 1-on-1 tutor">
+                        </div>
+                        <blockquote class="quote reveal reveal--right">
+                            <span class="quote__mark" aria-hidden="true">“</span>
+                            <p>Engaging with Scholarly 1-on-1 has proven to be a fulfilling experience. Olivia’s tutor has
+                                consistently demonstrated professionalism and reliability, resulting in commendable
+                                progress with her assignments. Olivia’s positive response and notable advancement at
+                                school speak volumes about the effectiveness of Scholarly 1-on-1. I highly appreciate their
+                                commitment to excellence and have confidently recommended Scholarly 1-on-1’s tutoring services
+                                to friends and family. The impact on Olivia’s educational journey has been truly
+                                remarkable.</p>
+                            <footer>
+                                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                                <strong>Kerlin</strong>
+                                <span>Olivia’s Father</span>
+                            </footer>
+                        </blockquote>
                     </div>
                 </div>
             </section>
-            <section class="Testimonial ">
-                <div class="container">
-                    <h6 class="textitxt">Testimonials</h6>
-                    <h4 class="customerstxt">What Our Customers Have To Say</h4>
-                    <div class="row">
 
-                        <div class="">
-                            <h4 class="readtxt">Read Their Reports And Satisfaction In Their Own Words</h4>
-                        </div>
-                        <div class="col-md-2 mt-4 pt-5 ">
-                            <img class="dotimg" src="/Images/dot.png" alt="" srcset="">
-                        </div>
-                        <div class="mt-4 pt-5 col-md-5"><img class="teacherimg" src="/Images/faculty.png" alt=""
-                                srcset="">
-                        </div>
-
-                        <div class="col-md-4  testimonialbox">Engaging with Jaya’s Academy has proven to be a fulfilling
-                            experience.
-                            Olivia’s tutor has consistently demonstrated professionalism and reliability, resulting in
-                            commendable progress with her assignments. Olivia’s positive response and notable
-                            advancement at
-                            school speak volumes about the effectiveness of Jaya’s Academy. I highly appreciate their
-                            commitment to excellence and have confidently recommended Miss Jaya’s tutoring services to
-                            friends and family. The impact on Olivia’s educational journey has been truly remarkable.
-                            <hr>
-                            <h5>Kerlin</h5>
-                            <h6>Oliva’s Father</h6>
-                        </div>
-
-
-                    </div>
+            <!-- CTA -->
+            <section class="cta" id="contact">
+                <div class="cta__inner reveal">
+                    <h2>Ready to unlock your child’s potential?</h2>
+                    <p>Book a free consultation and tech demo with one of our certified tutors today.</p>
+                    <a href="mailto:info@scholarly1on1.com" class="btn btn--dark">Contact Us Now <span
+                            class="btn__arrow">→</span></a>
                 </div>
             </section>
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top footerbg">
-                <div class="col-md-4 d-flex align-items-center">
-                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                        <svg class="bi" width="30" height="24">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a>
-                    <span class="txtfooter">Copyright 2012-2023 © Jaya’s Academy</span>
-                </div>
 
-                <ul class="nav col-md-4 txtfooter d-flex  ">
-                    <li class="m-2">Privacy Policy | Sitemap | Terms of Service</li>
-                </ul>
+            <footer class="footer">
+                <span>Copyright 2012–2023 © Scholarly 1-on-1</span>
+                <nav class="footer__links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Terms of Service</a>
+                </nav>
             </footer>
-        </div>
-
+        </main>
     </div>
+
+    <a href="#top" class="to-top" aria-label="Back to top"><img src="Images/uparrow.png" alt=""></a>
 </body>
 
 </html>
